@@ -1,0 +1,33 @@
+.col-md-6 {
+    padding: 32px;
+}
+
+.bi-star-fill {
+    color: #f59e0b;
+    margin-right: 5px;
+}
+
+.bi-shield-fill-check {
+    color: #dc2626;
+}
+
+.text-red {
+    color: #991b1b !important;
+}
+
+.btn-buy {
+    background: #f97316;
+    color: #fff;
+    padding: 12px 32px;
+}
+
+.btn-books {
+    border: 2px solid #dc2626;
+    margin-right: 8px;
+    width: 120px;
+}
+
+.image-ratio {
+    object-fit: fill;
+    aspect-ratio: 3 / 2;
+}

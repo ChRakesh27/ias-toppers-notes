@@ -1,0 +1,41 @@
+.review {
+    background: #fef7e7;
+    padding: 96px 0px;
+}
+
+.bi-star-fill {
+    color: #f59e0b;
+    margin-right: 5px;
+}
+
+.card {
+    padding: 32px;
+    aspect-ratio: 9/5;
+}
+
+.text-red {
+    color: #aa131d;
+
+}
+
+.review-body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-midth:600px) {
+    .review-body {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+}

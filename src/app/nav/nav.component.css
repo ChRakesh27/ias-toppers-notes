@@ -1,0 +1,13 @@
+.nav-bar {
+    background: #fefce8;
+    padding: 10px 0px;
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.btn-offer {
+    background: #EA580c;
+    color: #fff;
+    padding: 12px 32px;
+}

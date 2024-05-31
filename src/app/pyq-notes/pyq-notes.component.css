@@ -1,0 +1,59 @@
+.pyq-notes {
+    background: #fefce8;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+
+.text-red {
+    color: #aa131d;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+.pyq-body {
+    padding-top: 48px;
+}
+
+.card {
+    padding: 48px;
+    border: none;
+    border-top: 5px solid #aa131d;
+}
+
+.list {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.item-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.info {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .item-reverse {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .info {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}

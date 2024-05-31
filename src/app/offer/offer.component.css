@@ -1,0 +1,56 @@
+.text-red {
+    color: #dc2626;
+}
+
+.card {
+    padding: 32px 0px;
+    border: none;
+}
+
+.bg-light-green {
+    background: #f0fdf4;
+}
+
+.bg-light-yellow {
+    background: #fef3c7;
+}
+
+
+.card-title {
+    color: #aa131d;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 8px 24px;
+    margin: 24px;
+    border-radius: 20px;
+    background: #f6b3b7;
+}
+
+.price {
+    color: #6e0c13;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.btn-green {
+    background: #65a30d;
+    color: #fff;
+    padding: 12px 32px;
+    font-size: 24px;
+}
+
+.btn-red {
+    background: #ea580c;
+    color: #fff;
+    padding: 12px 32px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background: #6e0c13;
+}

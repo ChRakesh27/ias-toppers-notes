@@ -1,0 +1,49 @@
+<div class="review">
+
+    <div class="container">
+        <div class="text-center mb-4">
+            <p class="text-red fw-bold title">What students think about the book</p>
+            <div class="heading">
+                Students love the Books
+            </div>
+        </div>
+        <div class="review-body">
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                @for (review of reviews; track $index) {
+                <div class="col">
+                    <div class="card border-0 mb-3">
+                        <div class="card-body">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 717 627"
+                                class="iconify w-full h-full text-red">
+                                <path fill="currentColor"
+                                    d="m306 106l-26-40C100 187 0 334 0 455c0 117 86 172 159 172c92 0 157-78 157-160c0-69-44-128-103-150c-17-6-33-11-33-40c0-37 27-92 126-171zm397 0l-26-40C499 187 397 334 397 455c0 117 88 172 161 172c93 0 159-78 159-160c0-69-45-128-106-150c-17-6-32-11-32-40c0-37 28-92 124-171z">
+                                </path>
+                            </svg>
+                            <h2 class="fw-bold">{{review.title}}</h2>
+                            <p class="card-text mt-4">{{review.description}}</p>
+                        </div>
+                        <div class="card-footer border-0  bg-white">
+                            <div class="d-flex justify-content-between">
+                                <div class="">- {{review.name}}</div>
+                                <div class="stars">
+                                    @for (start of [1,2,3,4,5]; track $index) {
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+</div>

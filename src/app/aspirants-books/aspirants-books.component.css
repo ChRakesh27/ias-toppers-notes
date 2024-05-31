@@ -1,0 +1,27 @@
+.card {
+    background: linear-gradient(150deg, #feddde, #feddde, rgba(252, 232, 233, 0));
+    box-shadow: 3px 3px 30px #c9c9c9;
+    padding: 48px 10px;
+    border: none;
+    aspect-ratio: 9/6;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 30px #888888;
+}
+
+.book-des {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.book-name {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 26px 1px;
+    }
+}
