@@ -1,0 +1,8 @@
+.register {
+    position: sticky;
+    bottom: 50vh;
+    z-index: 9997;
+    padding: 0px;
+    width: 150px;
+    height: 100%;
+}

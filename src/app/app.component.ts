@@ -10,13 +10,13 @@ import { PyqNotesComponent } from "./pyq-notes/pyq-notes.component";
 import { OfferComponent } from "./offer/offer.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 import { ContactComponent } from "./contact/contact.component";
-
+import { RegistrationComponent } from "./registration/registration.component"
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, NavComponent, HomeComponent, ToppersComponent, BooksComponent, AspirantsBooksComponent, AnswersCompilationComponent, PyqNotesComponent, OfferComponent, ReviewsComponent, ContactComponent]
+  imports: [RouterOutlet, NavComponent, HomeComponent, ToppersComponent, BooksComponent, AspirantsBooksComponent, AnswersCompilationComponent, PyqNotesComponent, OfferComponent, ReviewsComponent, ContactComponent, RegistrationComponent]
 })
 export class AppComponent {
   title = 'frontend';

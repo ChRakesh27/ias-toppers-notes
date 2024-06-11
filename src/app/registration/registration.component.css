@@ -1,0 +1,20 @@
+.btn-register {
+    background: red;
+    width: 100%;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: 700;
+}
+
+.bi-check-circle {
+    color: green;
+    /* margin-left: 100px; */
+}
+
+.submit-body {
+    display: flex;
+    justify-content: center;
+}

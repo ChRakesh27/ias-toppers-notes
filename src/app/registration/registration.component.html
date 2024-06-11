@@ -1,0 +1,58 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Register
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-9991" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            @if(!isSubmit){
+            <form method="post" id="sheetdb-form" action="https://sheetdb.io/api/v1/58f61be4dda40"
+                (submit)="onSubmit()">
+                <div class="modal-body">
+                    <label>UserName:</label>
+                    <input type="text" placeholder="enter UserName" class="form-control" name="data[name]"
+                        [(ngModel)]="name">
+                    <label>Email:</label>
+                    <input type="email" placeholder="enter Email" class="form-control" name="data[email]"
+                        [(ngModel)]="email">
+                    <label>Phone:</label>
+                    <input type="text" placeholder="enter Phone" class="form-control" maxlength="10" minlength="10"
+                        name="data[phone]" [(ngModel)]="phone">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            }@else{
+            <div class="submit-body">
+                <div class="">
+                    <div class="modal-body">
+                        <div class="">
+                            <div class="d-flex justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                            </div>
+                            <h1>Thank you</h1>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+    </div>
+</div>
